@@ -12,5 +12,8 @@ public class practice {
     System.out.println("oh " + message);
     int number = scan.nextInt();
     System.out.println(number);
+    if (number == 1) {
+      System.out.println(number);
+    }
   }
 }
