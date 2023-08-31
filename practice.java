@@ -17,3 +17,18 @@ public class practice {
     }
   }
 }
+
+class practice2 {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+    Scanner scan = new Scanner(System.in);
+    int number = scan.nextInt();
+    if (number == 100) {
+      System.out.println(number);
+    } else if (number < 100) {
+      System.out.println("器が小さい");
+    } else {
+      System.out.println("カリスマ");
+    }
+  }
+}
