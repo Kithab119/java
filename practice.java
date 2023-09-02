@@ -48,6 +48,12 @@ class practice3 {
     Scanner scan = new Scanner(System.in);
     int count = scan.nextInt();
     for (int i = 0; i <= count; i++) {
+      int number = scan.nextInt();
+      if (number == 3) {
+        System.out.println("Mr." + number);
+      } else {
+        System.out.println("バロックワークス");
+      }
       System.out.println(i);
     }
   }
