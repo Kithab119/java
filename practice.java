@@ -30,5 +30,15 @@ class practice2 {
     } else {
       System.out.println("カリスマ");
     }
+    String word = scan.next();
+    if (word.equals("yah")) {
+      System.out.println(word);
+    } else {
+      System.out.println("tt");
+    }
+    String ai = "aiueo";
+    for (int i = 0; i < 6; i++) {
+      System.out.println(ai);
+    }
   }
 }
