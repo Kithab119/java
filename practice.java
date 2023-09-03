@@ -61,3 +61,13 @@ class practice3 {
     System.out.println("君は" + abc + "点");
   }
 }
+
+class practice4 {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i <= 3) {
+      System.out.println("天才" + i);
+      i = i + 1;
+    }
+  }
+}
