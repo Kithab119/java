@@ -71,3 +71,5 @@ class practice4 {
     }
   }
 }
+
+//ここまで、変数、Sccaner、if、for、while、randum
