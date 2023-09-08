@@ -73,3 +73,11 @@ class practice4 {
 }
 
 //ここまで、変数、Sccaner、if、for、while、randum
+
+class practice5 {
+  public static void main(String[] args) {
+    String[] name = {"佐藤","青空","マスター"};
+    System.out.println(name[0]);
+    System.out.println(name[1]);
+  }
+}
