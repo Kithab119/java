@@ -81,3 +81,7 @@ class practice5 {
     System.out.println(name[1]);
   }
 }
+
+//学習チャート...progate => dotinstall(無料枠) => paiza演習B =>
+//VSCode...Git準備
+//SpringBoot...準備
