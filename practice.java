@@ -79,6 +79,9 @@ class practice5 {
     String[] name = {"佐藤","青空","マスター"};
     System.out.println(name[0]);
     System.out.println(name[1]);
+    Calendar calendar = Calendar.getInstance();
+    int nenn = calendar.get(Calendar.YEAR);
+    System.out.println(nenn);
   }
 }
 
