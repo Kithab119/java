@@ -88,3 +88,16 @@ class practice5 {
 //学習チャート...progate => dotinstall(無料枠) => paiza演習B =>
 //VSCode...Git準備
 //SpringBoot...準備
+
+class practice6 {
+  public static void main(String[] args) {
+   double hei = Math.sqrt(57);
+   System.out.println("平方根" + hei);
+   int zett = Math.abs(-45);
+   System.out.println("絶対値" + zett);
+   double cos = Math.cos(Math.toRadians(75));
+   System.out.println(cos);
+   int max = Math.max(Math.max(4, 5), 8);
+   System.out.println(max);
+  }
+}
