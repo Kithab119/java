@@ -99,5 +99,8 @@ class practice6 {
    System.out.println(cos);
    int max = Math.max(Math.max(4, 5), 8);
    System.out.println(max);
+   Scanner scan = new Scanner(System.in);
+   double value = scan.nextDouble();
+   System.out.println(Math.sqrt(value));
   }
 }
