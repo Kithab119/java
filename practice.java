@@ -104,3 +104,12 @@ class practice6 {
    System.out.println(Math.sqrt(value));
   }
 }
+
+class practice7 {
+  public static void main(String[] args) {
+    String name = "Miraboreasu";
+    System.out.println(name.length());
+    System.out.println(name.charAt(6));
+    System.out.println(name.equals("Miraboreasu"));
+  }
+}
