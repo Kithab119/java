@@ -116,6 +116,7 @@ class practice7 {
 
 class practice8 {
   public static void main(String[] args) {
-    System.out.print("11¥t222");
+    String n = "11¥t222";
+    System.out.print(n);
   }
 }
