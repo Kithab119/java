@@ -123,5 +123,12 @@ class practice8 {
     }
     System.out.println("合計" + total);
     System.out.println("平均" + total/number.length);
+    double[] data = {0.3, 1.05, 2.2};
+    double tt = 0;
+    for(double n : data) {
+      tt += n;
+    }
+    System.out.println("合計" + tt);
+    System.out.println("平均" + tt/data.length);
   }
 }
