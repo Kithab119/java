@@ -116,7 +116,7 @@ class practice7 {
 
 class practice8 {
   public static void main(String[] args) {
-    String n = "11¥t222";
-    System.out.print(n);
+    int[] number = {5, 12, 8, 21, 9};
+    System.out.println(number[4]);
   }
 }
