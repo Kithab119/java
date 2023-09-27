@@ -118,5 +118,8 @@ class practice8 {
   public static void main(String[] args) {
     int[] number = {5, 12, 8, 21, 9};
     System.out.println(number[4]);
+    for(int n : number) {
+      System.out.println(n + "\t");
+    }
   }
 }
