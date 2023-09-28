@@ -130,9 +130,16 @@ class practice8 {
     }
     System.out.println("合計" + tt);
     System.out.println("平均" + tt/data.length);
-    var list = List.of(10, 20, 30);
-    for(int n : list) {
-      System.out.println(n);
-    }
+  }
+}
+
+class method {
+  public static void main(String[] args) {
+    System.out.println("Start");
+    message();
+    System.out.println("End");
+  }
+  public static void message() {
+    System.out.println("Hello");
   }
 }
