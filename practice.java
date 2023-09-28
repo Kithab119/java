@@ -140,11 +140,21 @@ class method {
     System.out.println("End");
     double ans = calc(10.5, 2.35);
     System.out.println(ans);
+    Scanner scan = new Scanner(System.in);
+    double weight = scan.nextDouble();
+    double height = scan.nextDouble();
+    double value = bmi(weight, height);
+    System.out.printf("BMI指数=%.2f", value);
   }
   public static void message(String msg) {
     System.out.println(msg);
   }
   public static double calc(double x1, double x2) {
     return Math.sqrt(x1 + x2);
+  }
+  // practice
+  public static double bmi(double weight, double height) {
+    double index = weight / Math.pow((height / 100), 2);
+    return index;
   }
 }
