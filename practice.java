@@ -138,12 +138,13 @@ class method {
     System.out.println("Start");
     message("Welcome");
     System.out.println("End");
-    calc(10.5, 2.35);
+    double ans = calc(10.5, 2.35);
+    System.out.println(ans);
   }
   public static void message(String msg) {
     System.out.println(msg);
   }
-  public static void calc(double x1, double x2) {
-    System.out.println(Math.sqrt(x1 + x2));
+  public static double calc(double x1, double x2) {
+    return Math.sqrt(x1 + x2);
   }
 }
