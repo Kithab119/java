@@ -136,10 +136,10 @@ class practice8 {
 class method {
   public static void main(String[] args) {
     System.out.println("Start");
-    message();
+    message("Welcome");
     System.out.println("End");
   }
-  public static void message() {
-    System.out.println("Hello");
+  public static void message(String msg) {
+    System.out.println(msg);
   }
 }
