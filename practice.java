@@ -151,6 +151,8 @@ class method {
     System.out.printf("四角形の面積 = %.2f", ans2);
     double aw  = Util.menseki(5.5);
     System.out.printf("円の面積 = %.2f%n", aw);
+    int num = sum(10, 20, 30, 40, 50);
+    System.out.println(num);
   }
   public static void message(String msg) {
     System.out.println(msg);
@@ -170,6 +172,13 @@ class method {
   public static double bmi(double weight, double height) {
     double index = weight / Math.pow((height / 100), 2);
     return index;
+  }
+  public static int sum(int... numbers) {
+    int total = 0;
+    for(int n : numbers) {
+      total += n;
+    }
+    return total;
   }
 }
 /**
