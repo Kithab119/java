@@ -213,3 +213,10 @@ class Util {
     return s;
   }
 }
+
+class kankei {
+  public static void main(String[] args) {
+    a = 3;
+    System.out.println(a > 1);
+  }
+}
