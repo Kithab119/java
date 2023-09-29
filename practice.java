@@ -216,7 +216,7 @@ class Util {
 
 class kankei {
   public static void main(String[] args) {
-    a = 3;
+    int a = 3;
     System.out.println(a > 1);
   }
 }
