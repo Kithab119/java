@@ -145,6 +145,10 @@ class method {
     double height = scan.nextDouble();
     double value = bmi(weight, height);
     System.out.printf("BMI指数=%.2f", value);
+    double ans1 = menseki(5.5);
+    double ans2 = menseki(12, 2.5);
+    System.out.printf("円の面積 = %.2f%n", ans1);
+    System.out.printf("四角形の面積 = %.2f", ans2);
   }
   public static void message(String msg) {
     System.out.println(msg);
@@ -152,9 +156,18 @@ class method {
   public static double calc(double x1, double x2) {
     return Math.sqrt(x1 + x2);
   }
+  public static double menseki(double hankei) {
+    double s = Math.pow(hankei, 2) * Math.PI;
+    return s;
+  }
+  public static double menseki(double height, double width) {
+    double s = height * width;
+    return s;
+  }
   // practice
   public static double bmi(double weight, double height) {
     double index = weight / Math.pow((height / 100), 2);
     return index;
   }
+
 }
