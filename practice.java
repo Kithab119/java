@@ -149,6 +149,8 @@ class method {
     double ans2 = menseki(12, 2.5);
     System.out.printf("円の面積 = %.2f%n", ans1);
     System.out.printf("四角形の面積 = %.2f", ans2);
+    double aw  = Util.menseki(5.5);
+    System.out.printf("円の面積 = %.2f%n", aw);
   }
   public static void message(String msg) {
     System.out.println(msg);
@@ -169,5 +171,15 @@ class method {
     double index = weight / Math.pow((height / 100), 2);
     return index;
   }
+}
 
+class Util {
+  public static double menseki(double height, double width) {
+    double s = height * width;
+    return s;
+  }
+  public static double menseki(double hankei) {
+    double s = Math.pow(hankei, 2) * Math.PI;
+    return s;
+  }
 }
