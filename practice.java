@@ -229,6 +229,12 @@ class zyouken {
     if(n>=5) {
       k *= 0.7;
     }
-    System.out.printf("%,d", k);
+    System.out.printf("%,d円", k);
+    int y = scan.nextInt();
+    if(y%4==0 && y%100!=0 || y%400==0) {
+      System.out.println("うるう年です");
+    }else {
+      System.out.println("うるう年ではありません");
+    }
   }
 }
