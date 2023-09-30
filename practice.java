@@ -237,7 +237,7 @@ class zyouken {
       System.out.println("うるう年ではありません");
     }
     int m = scan.nextInt();
-    switch(m) {
+    switch(m) { //現在はswitch文の形式が変わっているため、この形式は基本使わない
       case 12:
       case 1:
       case 2:
