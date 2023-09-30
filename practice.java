@@ -220,3 +220,15 @@ class kankei {
     System.out.println(a > 1);
   }
 }
+
+class zyouken {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
+    int k = n * 1000;
+    if(n>=5) {
+      k *= 0.7;
+    }
+    System.out.printf("%,d", k);
+  }
+}
