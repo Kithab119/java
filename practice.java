@@ -261,5 +261,11 @@ class zyouken {
       default:
         System.out.println("月の値が不正です");
     }
+    int total = 0;
+    for(int i = 0; i<5; i++) {
+      int su = scan.nextInt();
+      total += su;
+    }
+    System.out.println(total);
   }
 }
