@@ -269,3 +269,33 @@ class zyouken {
     System.out.println(total);
   }
 }
+
+//オブジェクト作成↓
+class object {
+  public static void main(String[] args) {
+    Tax tax = new Tax(110, "木村一郎", 300000, 90000);
+    Tax tax2 = new Tax(120, "鈴木浩二", 250000, 120000);
+    Tax tax3 = new Tax(130, "斉藤涉", 400000, 180000);
+    System.out.println(tax.zeigaku());
+    System.out.println(tax2.zeigaku());
+    System.out.println(tax3.zeigaku());
+  }
+}
+
+class Tax {
+  private int number;
+  private String name;
+  private int shotoku;
+  private int koujo;
+  //コンストラクタ↓
+  public Tax(int number, String name, int shotoku, int koujo) {
+    this.number = number;
+    this.name = name;
+    this.shotoku = shotoku;
+    this.koujo = koujo;
+  }
+
+  public int zeigaku() {
+    return(int) ((shotoku - koujo) * 0.1);
+  }
+}
