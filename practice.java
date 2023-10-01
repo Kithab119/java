@@ -279,6 +279,8 @@ class object {
     System.out.println(tax.zeigaku());
     System.out.println(tax2.zeigaku());
     System.out.println(tax3.zeigaku());
+    Menkei menkei = new Menkei(20.3, 40.8);
+    System.out.println(menkei.teitaka());
   }
 }
 
@@ -297,5 +299,17 @@ class Tax {
 
   public int zeigaku() {
     return(int) ((shotoku - koujo) * 0.1);
+  }
+}
+
+class Menkei {
+  double tei;
+  double taka;
+  public Menkei(double tei, double taka) {
+    this.tei = tei;
+    this.taka = taka;
+  }
+  public double teitaka() {
+    return tei * taka;
   }
 }
