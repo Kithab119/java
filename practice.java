@@ -337,15 +337,17 @@ class Joining {
   public String getCsv() {
     return csv;
   }
-}
-
-class joi {
   public static void main(String[] args) {
     Joining j = new Joining();
     j.add("apple");
     j.add("banana");
     j.add("peach");
     System.out.println(j.getCsv());
+  }
+}
+
+class joi {
+  public static void main(String[] args) {
     Nno no = new Nno();
     no.print();
   }
