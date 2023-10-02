@@ -313,3 +313,38 @@ class Menkei {
     return tei * taka;
   }
 }
+
+class Joining {
+  private String csv;
+  private String delimiter;
+
+  public Joining(String csv, String delimiter) {
+    this.csv = csv;
+    this.delimiter = delimiter;
+  }
+  public Joining(String delimiter) {
+    this.csv = "";
+    this.delimiter = delimiter;
+  }
+  public Joining() {
+    this.csv = "";
+    this.delimiter = ",";
+  }
+
+  public void add(String s) {
+    csv += csv.isEmpty() ? s : delimiter + s;
+  }
+  public String getCsv() {
+    return csv;
+  }
+}
+
+class joi {
+  public static void main(String[] args) {
+    Joining j = new Joining();
+    j.add("apple");
+    j.add("banana");
+    j.add("peach");
+    System.out.println(j.getCsv());
+  }
+}
