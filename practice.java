@@ -345,6 +345,7 @@ class Joining {
     System.out.println(j.getCsv());
   }
 }
+//クラスの中にstaticメンバとインスタンスメンバは混在できる!
 
 class joi {
   public static void main(String[] args) {
