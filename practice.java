@@ -346,5 +346,13 @@ class joi {
     j.add("banana");
     j.add("peach");
     System.out.println(j.getCsv());
+    Nno no = new Nno();
+    no.print();
+  }
+}
+
+class Nno {
+  public void print() {
+    System.out.println("Nofieldクラス");
   }
 }
