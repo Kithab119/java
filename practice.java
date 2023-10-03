@@ -270,35 +270,57 @@ class zyouken {
   }
 }
 
-//オブジェクト作成↓
-class object {
-  public static void main(String[] args) {
-    Tax tax = new Tax(110, "木村一郎", 300000, 90000);
-    Tax tax2 = new Tax(120, "鈴木浩二", 250000, 120000);
-    Tax tax3 = new Tax(130, "斉藤涉", 400000, 180000);
-    System.out.println(tax.zeigaku());
-    System.out.println(tax2.zeigaku());
-    System.out.println(tax3.zeigaku());
-    Menkei menkei = new Menkei(20.3, 40.8);
-    System.out.println(menkei.teitaka());
-  }
-}
-
-class Tax {
-  private int number;
-  private String name;
-  private int shotoku;
-  private int koujo;
+final class Tax {
+  private final Id id;
+  private final int shotoku;
+  private final int koujo;
   //コンストラクタ↓
-  public Tax(int number, String name, int shotoku, int koujo) {
-    this.number = number;
-    this.name = name;
+  public Tax(Id id, int shotoku, int koujo) {
+    this.id = new Id(id.getNumber(), id.getName());
     this.shotoku = shotoku;
     this.koujo = koujo;
   }
 
   public int zeigaku() {
     return(int) ((shotoku - koujo) * 0.1);
+  }
+  public Id getId() {
+    return new Id(id.getNumber(), id.getName());
+  }
+
+  public static void main(String[] args) {
+    Id id = new Id(100, "田中宏");
+    Tax tax = new Tax(id, 300000, 100000);
+    System.out.println(tax.getId());
+    tax.getId().setNumber(200);
+    System.out.println(tax.getId());
+  }
+}
+
+class Id {
+  private int number;
+  private String name;
+
+  public Id(int number, String name) {
+    this.number = number;
+    this.name = name;
+  }
+
+  public int getNumber() {
+    return number;
+  }
+  public String getName() {
+    return name;
+  }
+  public void setNumber(int number) {
+    this.number = number;
+  }
+  public void setNumber(String name) {
+    this.name = name;
+  }
+  @Override
+  public String toString() {
+    return "Id [number=" + number + ", name=" + name + "]";
   }
 }
 
