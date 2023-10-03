@@ -270,13 +270,13 @@ class zyouken {
   }
 }
 
-final class Tax {
+final class Tax { //finalをつけることで一度決まったデータの中身を変更できなくする。
   private final Id id;
   private final int shotoku;
   private final int koujo;
   //コンストラクタ↓
   public Tax(Id id, int shotoku, int koujo) {
-    this.id = new Id(id.getNumber(), id.getName());
+    this.id = new Id(id.getNumber(), id.getName()); //新しくコピーを作成し、初期値にする。つまりコピー元のデータは残る。なのでコピー元のデータを書き換えることができなくなる。
     this.shotoku = shotoku;
     this.koujo = koujo;
   }
@@ -285,7 +285,7 @@ final class Tax {
     return(int) ((shotoku - koujo) * 0.1);
   }
   public Id getId() {
-    return new Id(id.getNumber(), id.getName());
+    return new Id(id.getNumber(), id.getName()); //新しくコピーを作成し、初期値にする。つまりコピー元のデータは残る。なのでコピー元のデータを書き換えることができなくなる。
   }
 
   public static void main(String[] args) {
