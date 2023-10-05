@@ -381,3 +381,4 @@ class Nno {
     System.out.println("Nofieldクラス");
   }
 }
+//push確認
