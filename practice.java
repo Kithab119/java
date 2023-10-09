@@ -1,4 +1,5 @@
 import java.util.*;
+import java.time.LocalDate;
 
 public class practice {
   public static void main(String[] args) {
@@ -382,3 +383,85 @@ class Nno {
   }
 }
 //push草確認3
+
+class GeneralMember {
+
+	private long id;
+	private String name;
+
+	public GeneralMember(long id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public int kai_hi() {
+		return 1000;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}
+
+
+class StudentMember extends GeneralMember {
+
+	private LocalDate expDate;
+
+	public StudentMember(long id, String name, LocalDate expDate) {
+		super(id, name);
+		this.expDate = expDate;
+	}
+
+	public boolean isExpired() {
+		LocalDate today = LocalDate.now();
+		return today.isAfter(expDate);
+	}
+
+	public LocalDate getExpDate() {
+		return expDate;
+	}
+
+	public void setExpDate(LocalDate expDate) {
+		this.expDate = expDate;
+	}
+
+}
+
+
+class Lesson {
+
+	private String lessonId;
+	private String lessonName;
+
+	public Lesson(String lessonId, String lessonName) {
+		this.lessonId = lessonId;
+		this.lessonName = lessonName;
+	}
+
+	public int ryokin() {
+		return 1000;
+	}
+
+	public String getLessonId() {
+		return lessonId;
+	}
+
+	public String getLessonName() {
+		return lessonName;
+	}
+
+}
