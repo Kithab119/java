@@ -426,6 +426,11 @@ class StudentMember extends GeneralMember {
 		this.expDate = expDate;
 	}
 
+  @Override
+  public int kai_hi() {
+    return 500;
+  }
+
 	public boolean isExpired() {
 		LocalDate today = LocalDate.now();
 		return today.isAfter(expDate);
