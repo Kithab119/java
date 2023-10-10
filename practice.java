@@ -483,3 +483,15 @@ class st {
     System.out.println("期限日=" + st.getExpDate());
   }
 }
+
+class gm {
+  public static void main(String[] args) {
+    GeneralMember gem = new StudentMember(100, "田中宏", LocalDate.of(2026, 3, 31));
+
+    System.out.println("id=" + gem.getId());
+    System.out.println("name=" + gem.getName());
+    System.out.println("会費=" + gem.kai_hi());
+    //System.out.println("期限日か=" + gem.isExpired());
+    //System.out.println("期限日=" + gem.getExpDate());
+  }
+}
