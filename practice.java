@@ -470,3 +470,16 @@ class Lesson {
 	}
 
 }
+
+class st {
+  public static void main(String[] args) {
+    LocalDate expDate = LocalDate.of(2026, 3, 31);
+    StudentMember st = new StudentMember(100, "田中宏", expDate);
+
+    System.out.println("id=" + st.getId());
+    System.out.println("name=" + st.getName());
+    System.out.println("会費=" + st.kai_hi());
+    System.out.println("期限日か=" + st.isExpired());
+    System.out.println("期限日=" + st.getExpDate());
+  }
+}
