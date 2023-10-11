@@ -493,6 +493,6 @@ class gm {
     System.out.println("会費=" + gem.kai_hi());
     //System.out.println("期限日か=" + gem.isExpired());
     //System.out.println("期限日=" + gem.getExpDate());
-    //あいう
+    //あいうえ
   }
 }
